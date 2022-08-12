@@ -1,0 +1,15 @@
+{
+  "name": "http_modern",
+  "version": "1.0.0",
+  "description": "Complete Node.js Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Hamid Alavi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
