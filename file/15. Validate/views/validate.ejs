@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle %>
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <% if (errorMessage) { %>
+        <div id="error">
+            <%= errorMessage %>
+        </div>
+        <% } %>
+            <form action="/validate" method="POST" novalidate>
+                <input class="<%= validationErrors.find(e => e.param === 'email') ? 'invalid' : '' %>" type="email"
+                    name="email" placeholder="Your email">
+                <input class="<%= validationErrors.find(e => e.param === 'password') ? 'invalid' : '' %>"
+                    type="password" name="password" placeholder="password">
+                <input class="<%= validationErrors.find(e => e.param === 'confirmPassword') ? 'invalid' : '' %>"
+                    type="password" name="confirmPassword" placeholder="confirm password">
+                <button type="submit">Validate</button>
+            </form>
+</body>
+
+</html>

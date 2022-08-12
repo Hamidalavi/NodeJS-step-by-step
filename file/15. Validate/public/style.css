@@ -1,0 +1,13 @@
+#error {
+  display: block;
+  background: rgb(224, 148, 148);
+  width: 200px;
+  height: 50;
+  border-radius: 3px;
+  margin: 2px;
+  padding: 2px 5px;
+}
+
+.invalid {
+  border-color: red;
+}
