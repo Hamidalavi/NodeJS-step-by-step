@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= pageTitle %>
+    </title>
+</head>
+
+<body>
+    <h1>Hamid</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="title">
+        <input type="file" name="image" id="image">
+        <input type="number" name="price" placeholder="price">
+        <input type="text" name="description" placeholder="description">
+        <img width="100" height="100" src="<%= product.imageUrl %>" alt="">
+        <button type="submit">Upload</button>
+    </form>
+    <form action="/show-product" method="post">
+        <input type="text" name="title">
+        <button type="submit">Show</button>
+    </form>
+</body>
+
+</html>

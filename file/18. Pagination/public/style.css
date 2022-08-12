@@ -1,0 +1,17 @@
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: blue;
+  padding: 0.5rem;
+  border: 1px solid green;
+}
+
+.pagination a:hover,
+.pagination a:active {
+  background-color: greenyellow;
+  color: rebeccapurple;
+}

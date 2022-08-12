@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <% products.forEach(prod=> { %>
+    <div>
+        <%= prod.title %>
+    </div>
+    <% }); %>
+    <section class="pagination">
+        <% if (currentPage !== 1 && previousPage !== 1) { %>
+        <a href="?page=1">1</a>
+        <% } %>
+        <a href="?page=<%= currentPage %>"><%= currentPage %></a>
+        <% if (hasNextPage) { %>
+        <a href="?page=<%= nextPage %>"><%= nextPage %></a>
+        <% } %>
+        <% if (lastPage !== currentPage && lastPage !== nextPage) { %>
+        <a href="?page=<%= lastPage %>"><%= lastPage %></a>
+        <% } %>
+    </section>
+</body>
+
+</html>
