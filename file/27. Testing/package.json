@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-step-by-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Hamid Alavi",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.3"
+  },
+  "dependencies": {
+    "mongoose": "^5.11.12"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-step-by-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "Hamid Alavi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "helmet": "^4.3.1",
+    "mongoose": "^5.11.12",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7"
+  }
+}
