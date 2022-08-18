@@ -33,4 +33,4 @@
 ![TotalDownloads](https://img.shields.io/github/downloads/Hamidalavi/CSS-step-by-step/total)
 ![License](https://img.shields.io/badge/license-EXB-orange)
 
-[![NodeJS](https://www.logigroup.com/images/modules/technologies/framework/nodejs.gif)](https://nodejs.org/en/)
+[![NodeJS](https://media3.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif)](https://nodejs.org/en/)
